@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Belhasa Driving Center — Your trusted driving school in the UAE." />
+    <title>Belhasa Driving Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+
+            <!-- Logo -->
+            <a href="#" class="header-logo" id="header-logo-link" aria-label="Belhasa Driving Center - Home">
+                <!-- Replace src with your actual logo file -->
+                <img src="assets/images/logo_bdc.png" alt="Belhasa Driving Center Logo" id="site-logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <!-- Fallback placeholder shown if logo.png is missing -->
+                <div class="logo-placeholder" id="logo-placeholder">
+                    <div class="logo-icon">SB</div>
+                    <div class="logo-text">
+                        <span class="logo-arabic">مركز بلحسا للسياقة</span>
+                        <span class="logo-english">BELHASA DRIVING CENTER</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Navigation / CTA -->
+            <nav class="header-nav" id="header-nav" aria-label="Primary navigation">
+                <a href="#ramadan-offer" class="btn-ramadan" id="btn-ramadan-offer">
+                    <span class="btn-icon" aria-hidden="true">🌙</span>
+                    <span>Ramadan Offer</span>
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="ramadan-offer" aria-label="Ramadan Offer Hero">
+        <div class="hero-inner">
+
+            <!-- ── LEFT: Copy ── -->
+            <div class="hero-content" id="hero-content">
+
+                <!-- Badge -->
+                <div class="hero-badge" id="hero-badge">
+                    <span class="hero-badge-icon">🌙</span>
+                    <span>EXCLUSIVE RAMADAN OFFER — DUBAI</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="hero-heading" id="hero-heading">
+                    <span class="hero-heading-dark">40% Discount On Practical Training</span><br />
+                    <span class="hero-heading-gold">Tests Until You</span><br />
+                    <span class="hero-heading-gold">Pass!</span>
+                </h1>
+
+                <!-- Sub-copy -->
+                <p class="hero-desc" id="hero-desc">
+                    Enroll this Ramadan and never pay for a re-test again. We stay
+                    with you until you hold your UAE driving license — guaranteed.
+                </p>
+
+                <!-- Feature Pills -->
+                <div class="hero-features" id="hero-features">
+                    <div class="hero-feat-pill">
+                        <!-- Car Icon -->
+                        <span class="icon icon-car"></span>
+                        <span class="feat-label">LMV</span>
+                        <span class="feat-value">Up to 40% Off</span>
+                    </div>
+                    <div class="hero-feat-pill">
+                        <!-- Motorcycle Icon -->
+                        <svg class="hero-feat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="5.5" cy="17.5" r="3.5"></circle>
+                            <circle cx="18.5" cy="17.5" r="3.5"></circle>
+                            <path d="M15 6h-5a1 1 0 0 0-1 1v4l-3-2a2 2 0 0 0-3 2v2h4"></path>
+                            <path d="M9 13.5L12 11h7v2.5"></path>
+                        </svg>
+                        <span class="feat-label">MC</span>
+                        <span class="feat-value">Up to 50% Off</span>
+                    </div>
+                    <div class="hero-feat-pill hero-feat-pill--neutral">
+                        <!-- Bus Icon -->
+                        <svg class="hero-feat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                            <path d="M6 18v2"></path>
+                            <path d="M18 18v2"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                        <span class="feat-label-bold">Free Transportation</span>
+                    </div>
+                    <div class="hero-feat-pill hero-feat-pill--neutral">
+                        <!-- Credit Card Icon -->
+                        <svg class="hero-feat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                        </svg>
+                        <span class="feat-label-bold">0% via Tabby</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── RIGHT: Form Card ── -->
+            <div class="hero-form-wrap" id="hero-form-wrap">
+                <div class="hero-form-card" id="hero-form-card">
+
+                    <h2 class="form-title" id="form-title">Claim Your Ramadan Offer</h2>
+                    <p class="form-subtitle">
+                        Book now —
+                        <span class="form-subtitle-gold">Unlimited driving tests until you pass!</span>
+                    </p>
+
+                    <form class="booking-form" id="booking-form" novalidate>
+
+                        <div class="form-group">
+                            <label for="field-name" class="form-label">FULL NAME</label>
+                            <input type="text" id="field-name" name="full_name" class="form-input"
+                                placeholder="Full Name" autocomplete="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-email" class="form-label">EMAIL</label>
+                            <input type="email" id="field-email" name="email" class="form-input" placeholder="Email"
+                                autocomplete="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-phone" class="form-label">PHONE NUMBER</label>
+                            <input type="tel" id="field-phone" name="phone" class="form-input"
+                                placeholder="+971 50 000 0000" autocomplete="tel" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-language" class="form-label">PREFERRED LANGUAGE</label>
+                            <div class="form-select-wrap">
+                                <select id="field-language" name="language" class="form-select" required>
+                                    <option value="">Select Language</option>
+                                    <option value="arabic" selected>Arabic</option>
+                                    <option value="english">English</option>
+                                    <option value="hindi">Hindi</option>
+                                    <option value="urdu">Urdu</option>
+                                    <option value="tagalog">Tagalog</option>
+                                </select>
+                                <span class="select-arrow" aria-hidden="true">▼</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field-interest" class="form-label">I'M INTERESTED IN</label>
+                            <div class="form-select-wrap">
+                                <select id="field-interest" name="interest" class="form-select" required>
+                                    <option value="">Select Course</option>
+                                    <option value="lmv" selected>Light Motor Vehicle (LMV)</option>
+                                    <option value="mc">Motorcycle</option>
+                                    <option value="hlb">Heavy & Light Bus</option>
+                                    <option value="ht">Heavy Truck</option>
+                                    <option value="hf">Heavy Forklift</option>
+                                    <option value="lf">Light Forklift</option>
+                                </select>
+                                <span class="select-arrow" aria-hidden="true">▼</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-book-form" id="btn-book-form">
+                            <span>🌙</span>
+                            <span>Book My Free Consultation</span>
+                        </button>
+
+                        <p class="form-privacy">*We'll never share your email with anyone else.</p>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== TRUST STRIP ===== -->
+    <section class="trust-strip" aria-label="Trust Indicators">
+        <div class="container trust-strip-inner">
+            <ul class="trust-list">
+                <li class="trust-item"><span class="trust-dot">•</span> RTA Approved</li>
+                <li class="trust-item"><span class="trust-dot">•</span> Dubai's Most Trusted Driving School</li>
+                <li class="trust-item"><span class="trust-dot">•</span> Free Transportation</li>
+                <li class="trust-item"><span class="trust-dot">•</span> 0% Installments via Tabby</li>
+                <!-- Duplicate for seamless scroll -->
+                <li class="trust-item"><span class="trust-dot">•</span> RTA Approved</li>
+                <li class="trust-item"><span class="trust-dot">•</span> Dubai's Most Trusted Driving School</li>
+                <li class="trust-item"><span class="trust-dot">•</span> Free Transportation</li>
+                <li class="trust-item"><span class="trust-dot">•</span> 0% Installments via Tabby</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <!-- ===== COURSES SECTION ===== -->
+    <section class="courses-section" aria-label="Our Driving Courses">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="courses-header">
+                <div class="header-separator">
+                    <span class="sep-line"></span>
+                    <span class="sep-text">BELHASA DRIVING CENTER</span>
+                    <span class="sep-line"></span>
+                </div>
+                <h2 class="courses-title">
+                    <span class="title-dark">Exclusive Savings on</span>
+                    <span class="title-gold">All Courses</span>
+                </h2>
+                <p class="courses-subtitle">Limited-time Ramadan discounts. Book now before slots fill up.</p>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="courses-grid">
+
+                <!-- Card 1: LMV -->
+                <div class="course-card">
+                    <div class="course-img-wrap">
+                        <span class="course-badge">MOST POPULAR</span>
+                        <img src="assets/images/Light motor vechicle.webp" alt="Light Motor Vehicle" class="course-img"
+                            loading="lazy">
+                    </div>
+                    <h3 class="course-name">Light Motor Vehicle</h3>
+                </div>
+
+                <!-- Card 2: Motorcycle -->
+                <div class="course-card">
+                    <div class="course-img-wrap">
+                        <span class="course-badge badge-deal">BEST DEAL</span>
+                        <img src="assets/images/Motorcycle.jpg" alt="Motorcycle" class="course-img" loading="lazy">
+                    </div>
+                    <h3 class="course-name">Motorcycle</h3>
+                </div>
+
+                <!-- Card 3: Heavy Truck -->
+                <div class="course-card">
+                    <div class="course-img-wrap">
+                        <img src="assets/images/Heavy truck bus.jpg" alt="Heavy Truck & Bus" class="course-img"
+                            loading="lazy">
+                    </div>
+                    <h3 class="course-name">Heavy Truck & Bus</h3>
+                </div>
+
+                <!-- Card 4: Forklift -->
+                <div class="course-card">
+                    <div class="course-img-wrap">
+                        <img src="assets/images/forklift.jpg" alt="Forklift" class="course-img" loading="lazy">
+                    </div>
+                    <h3 class="course-name">Forklift</h3>
+                </div>
+
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="courses-cta">
+                <button class="btn-cta-large"
+                    onclick="document.getElementById('booking-form').scrollIntoView({behavior: 'smooth'})">
+                    Start My Driving Journey
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== WHY BELHASA SECTION ===== -->
+    <section class="why-us-section" aria-label="Why Choose Belhasa">
+        <div class="container">
+
+            <!-- Header -->
+            <div class="courses-header">
+                <div class="header-separator">
+                    <span class="sep-line"></span>
+                    <span class="sep-text">WHY BELHASA</span>
+                    <span class="sep-line"></span>
+                </div>
+                <h2 class="courses-title">
+                    <span class="title-dark">Everything Included,</span>
+                    <span class="title-gold">Nothing Extra</span>
+                </h2>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="features-grid">
+
+                <!-- Card 1: Unlimited Tests -->
+                <div class="feature-card">
+                    <div class="feat-icon-box">
+                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Unlimited Tests</h3>
+                    <p class="feat-desc">Keep testing until you pass. Zero re-test fees, unlimited attempts.</p>
+                </div>
+
+                <!-- Card 2: Free Transport -->
+                <div class="feature-card">
+                    <div class="feat-icon-box">
+                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                            <circle cx="7" cy="18" r="2"></circle>
+                            <circle cx="17" cy="18" r="2"></circle>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Free Transport</h3>
+                    <p class="feat-desc">We pick you up and drop you off. Hassle-free every time.</p>
+                </div>
+
+                <!-- Card 3: 0% Tabby -->
+                <div class="feature-card">
+                    <div class="feat-icon-box">
+                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">0% via Tabby</h3>
+                    <p class="feat-desc">Split into 4 easy payments with zero interest.</p>
+                </div>
+
+                <!-- Card 4: RTA Approved -->
+                <div class="feature-card">
+                    <div class="feat-icon-box">
+                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">RTA Approved</h3>
+                    <p class="feat-desc">Fully certified by Dubai's Roads & Transport Authority.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VIDEO CTA SECTION ===== -->
+    <section class="video-cta-section" aria-label="Unlimited Tests Offer">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://bdc.ae/wp-content/uploads/2023/01/bdc_bg_video-1-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Dark Overlay -->
+        <div class="video-overlay"></div>
+
+        <div class="container video-content">
+
+            <!-- Separator -->
+            <div class="header-separator header-separator-light">
+                <span class="sep-line sep-line-light"></span>
+                <span class="sep-text sep-text-light">LIMITED TIME ONLY</span>
+                <span class="sep-line sep-line-light"></span>
+            </div>
+
+            <!-- Headlines -->
+            <h2 class="video-heading">
+                <span class="d-block text-white">Unlimited Driving Tests</span>
+                <span class="d-block text-gold">Until You Pass!</span>
+            </h2>
+
+            <p class="video-subtext">Up to 50% off. Free transport. 0% payment plan. No excuses to wait.</p>
+
+            <a href="#booking-form" class="btn-cta-large btn-video-cta">
+                Book My Free Consultation <span class="arrow">→</span>
+            </a>
+
+            <p class="terms-text">Terms & conditions apply. Offer valid during Ramadan period only.</p>
+
+        </div>
+    </section>
+
+    <!-- ===== LOCATIONS SECTION ===== -->
+    <section class="locations-section" aria-label="Our Branches">
+        <div class="container">
+
+            <h2 class="section-title-center">Find our <span class="text-italic-dark">Locations</span></h2>
+
+            <!-- Location Selector -->
+            <div class="locations-nav">
+                <!-- Location 1: Al Wasel -->
+                <button class="loc-btn active"
+                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                    <div class="loc-img-wrap">
+                        <img src="assets/images/alwasel branch.jpeg" alt="Al Wasl Branch" class="loc-thumb">
+                    </div>
+                    <span class="loc-name">Al Wasl</span>
+                </button>
+
+                <!-- Location 2: Al Quoz -->
+                <button class="loc-btn"
+                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                    <div class="loc-img-wrap">
+                        <img src="assets/images/Al Quoz branch.png" alt="Al Quoz Branch" class="loc-thumb">
+                    </div>
+                    <span class="loc-name">Al Quoz</span>
+                </button>
+
+                <!-- Location 3: Nad Al Hamar -->
+                <button class="loc-btn"
+                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                    <div class="loc-img-wrap">
+                        <img src="assets/images/Nad Al Ammar.png" alt="Nad Al Hamar Branch" class="loc-thumb">
+                    </div>
+                    <span class="loc-name">Nad Al Hamar</span>
+                </button>
+
+                <!-- Location 4: Jebel Ali -->
+                <button class="loc-btn"
+                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                    <div class="loc-img-wrap">
+                        <img src="assets/images/Jebal Ali.png" alt="Jebel Ali Branch" class="loc-thumb">
+                    </div>
+                    <span class="loc-name">Jebel Ali</span>
+                </button>
+
+                <!-- Location 5: Ras Al Khaimah -->
+                <button class="loc-btn"
+                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                    <div class="loc-img-wrap">
+                        <img src="assets/images/Rak branch.jpeg" alt="Ras Al Khaimah Branch" class="loc-thumb">
+                    </div>
+                    <span class="loc-name">Ras Al Khaimah</span>
+                </button>
+            </div>
+
+            <!-- Dynamic Map Frame -->
+            <div class="map-container">
+                <iframe id="main-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Switcher Script -->
+    <script>
+        function updateMap(btn, mapUrl) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.loc-btn').forEach(b => b.classList.remove('active'));
+            // Add to clicked button
+            btn.classList.add('active');
+            // Update Iframe
+            document.getElementById('main-map').src = mapUrl;
+        }
+    </script>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <!-- Logo (White Filter applied in CSS) -->
+            <img src="assets/images/logo_bdc.png" alt="Belhasa Driving Center" class="footer-logo">
+            <p class="copyright">© 2025 Belhasa Driving Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
