@@ -10,7 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
 </head>
 
 <body>
@@ -61,8 +66,7 @@
                 <!-- Headline -->
                 <h1 class="hero-heading" id="hero-heading">
                     <span class="hero-heading-dark">40% Discount On Practical Training</span><br />
-                    <span class="hero-heading-gold">Tests Until You</span><br />
-                    <span class="hero-heading-gold">Pass!</span>
+                    <span class="hero-heading-gold">Unlimited Test Until You Pass</span>
                 </h1>
 
                 <!-- Sub-copy -->
@@ -73,42 +77,16 @@
 
                 <!-- Feature Pills -->
                 <div class="hero-features" id="hero-features">
-                    <div class="hero-feat-pill">
-                        <!-- Car Icon -->
-                        <span class="icon icon-car"></span>
-                        <span class="feat-label">LMV</span>
-                        <span class="feat-value">Up to 40% Off</span>
-                    </div>
-                    <div class="hero-feat-pill">
-                        <!-- Motorcycle Icon -->
-                        <svg class="hero-feat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="5.5" cy="17.5" r="3.5"></circle>
-                            <circle cx="18.5" cy="17.5" r="3.5"></circle>
-                            <path d="M15 6h-5a1 1 0 0 0-1 1v4l-3-2a2 2 0 0 0-3 2v2h4"></path>
-                            <path d="M9 13.5L12 11h7v2.5"></path>
-                        </svg>
-                        <span class="feat-label">MC</span>
-                        <span class="feat-value">Up to 50% Off</span>
-                    </div>
+
                     <div class="hero-feat-pill hero-feat-pill--neutral">
                         <!-- Bus Icon -->
-                        <svg class="hero-feat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-                            <path d="M6 18v2"></path>
-                            <path d="M18 18v2"></path>
-                            <path d="M2 12h20"></path>
-                        </svg>
+                        <i class="fa-solid fa-bus hero-feat-svg"
+                            style="font-size: 22px; width: unset; height: unset;"></i>
                         <span class="feat-label-bold">Free Transportation</span>
                     </div>
                     <div class="hero-feat-pill hero-feat-pill--neutral">
                         <!-- Credit Card Icon -->
-                        <svg class="hero-feat-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                            <line x1="2" y1="10" x2="22" y2="10"></line>
-                        </svg>
+                        <img src="assets/images/tabby.svg" alt="Tabby Logo" style="height: 38px; width: auto;" />
                         <span class="feat-label-bold">0% via Tabby</span>
                     </div>
                 </div>
@@ -178,7 +156,7 @@
 
                         <button type="submit" class="btn-book-form" id="btn-book-form">
                             <span>🌙</span>
-                            <span>Book My Free Consultation</span>
+                            <span>Register Now</span>
                         </button>
 
                         <p class="form-privacy">*We'll never share your email with anyone else.</p>
@@ -194,11 +172,6 @@
     <section class="trust-strip" aria-label="Trust Indicators">
         <div class="container trust-strip-inner">
             <ul class="trust-list">
-                <li class="trust-item"><span class="trust-dot">•</span> RTA Approved</li>
-                <li class="trust-item"><span class="trust-dot">•</span> Dubai's Most Trusted Driving School</li>
-                <li class="trust-item"><span class="trust-dot">•</span> Free Transportation</li>
-                <li class="trust-item"><span class="trust-dot">•</span> 0% Installments via Tabby</li>
-                <!-- Duplicate for seamless scroll -->
                 <li class="trust-item"><span class="trust-dot">•</span> RTA Approved</li>
                 <li class="trust-item"><span class="trust-dot">•</span> Dubai's Most Trusted Driving School</li>
                 <li class="trust-item"><span class="trust-dot">•</span> Free Transportation</li>
@@ -321,13 +294,7 @@
                 <!-- Card 2: Free Transport -->
                 <div class="feature-card">
                     <div class="feat-icon-box">
-                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-                            <circle cx="7" cy="18" r="2"></circle>
-                            <circle cx="17" cy="18" r="2"></circle>
-                            <path d="M2 12h20"></path>
-                        </svg>
+                        <i class="fa-solid fa-bus feat-svg" style="font-size: 32px; width: unset; height: unset;"></i>
                     </div>
                     <h3 class="feat-title">Free Transport</h3>
                     <p class="feat-desc">We pick you up and drop you off. Hassle-free every time.</p>
@@ -336,11 +303,7 @@
                 <!-- Card 3: 0% Tabby -->
                 <div class="feature-card">
                     <div class="feat-icon-box">
-                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                            <line x1="2" y1="10" x2="22" y2="10"></line>
-                        </svg>
+                        <img src="assets/images/tabby.svg" alt="Tabby Logo" style="height: 48px; width: auto;" />
                     </div>
                     <h3 class="feat-title">0% via Tabby</h3>
                     <p class="feat-desc">Split into 4 easy payments with zero interest.</p>
@@ -349,14 +312,8 @@
                 <!-- Card 4: RTA Approved -->
                 <div class="feature-card">
                     <div class="feat-icon-box">
-                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
+                        <img src="assets/images/Rta logo.png" alt="RTA Logo" class="feat-svg"
+                            style="width: auto; height: 48px;" />
                     </div>
                     <h3 class="feat-title">RTA Approved</h3>
                     <p class="feat-desc">Fully certified by Dubai's Roads & Transport Authority.</p>
@@ -411,85 +368,164 @@
 
             <!-- Location Selector -->
             <div class="locations-nav">
-                <!-- Location 1: Al Wasel -->
-                <button class="loc-btn active"
-                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                <!-- Location 1: Al Wasl -->
+                <div class="loc-btn">
                     <div class="loc-img-wrap">
                         <img src="assets/images/alwasel branch.jpeg" alt="Al Wasl Branch" class="loc-thumb">
                     </div>
                     <span class="loc-name">Al Wasl</span>
-                </button>
+                </div>
 
                 <!-- Location 2: Al Quoz -->
-                <button class="loc-btn"
-                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                <div class="loc-btn">
                     <div class="loc-img-wrap">
                         <img src="assets/images/Al Quoz branch.png" alt="Al Quoz Branch" class="loc-thumb">
                     </div>
                     <span class="loc-name">Al Quoz</span>
-                </button>
+                </div>
 
                 <!-- Location 3: Nad Al Hamar -->
-                <button class="loc-btn"
-                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                <div class="loc-btn">
                     <div class="loc-img-wrap">
                         <img src="assets/images/Nad Al Ammar.png" alt="Nad Al Hamar Branch" class="loc-thumb">
                     </div>
                     <span class="loc-name">Nad Al Hamar</span>
-                </button>
+                </div>
 
                 <!-- Location 4: Jebel Ali -->
-                <button class="loc-btn"
-                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
+                <div class="loc-btn">
                     <div class="loc-img-wrap">
                         <img src="assets/images/Jebal Ali.png" alt="Jebel Ali Branch" class="loc-thumb">
                     </div>
                     <span class="loc-name">Jebel Ali</span>
-                </button>
+                </div>
 
-                <!-- Location 5: Ras Al Khaimah -->
-                <button class="loc-btn"
-                    onclick="updateMap(this, 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae')">
-                    <div class="loc-img-wrap">
-                        <img src="assets/images/Rak branch.jpeg" alt="Ras Al Khaimah Branch" class="loc-thumb">
-                    </div>
-                    <span class="loc-name">Ras Al Khaimah</span>
-                </button>
-            </div>
 
-            <!-- Dynamic Map Frame -->
-            <div class="map-container">
-                <iframe id="main-map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.6233381298175!2d55.3183226756749!3d25.215921877698882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d5171745325%3A0x3eae201add38ce0a!2sBelhasa%20Driving%20Center%20-%20Al%20Wasl%20(Jaddaf)%20Branch!5e0!3m2!1sen!2sae!4v1771496359922!5m2!1sen!2sae"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
             </div>
 
         </div>
     </section>
-
-    <!-- Map Switcher Script -->
-    <script>
-        function updateMap(btn, mapUrl) {
-            // Remove active class from all buttons
-            document.querySelectorAll('.loc-btn').forEach(b => b.classList.remove('active'));
-            // Add to clicked button
-            btn.classList.add('active');
-            // Update Iframe
-            document.getElementById('main-map').src = mapUrl;
-        }
-    </script>
 
     <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
         <div class="container footer-inner">
             <!-- Logo (White Filter applied in CSS) -->
             <img src="assets/images/logo_bdc.png" alt="Belhasa Driving Center" class="footer-logo">
-            <p class="copyright">© 2025 Belhasa Driving Center. All rights reserved.</p>
+            <p class="copyright">© 2026 Belhasa Driving Center. All rights reserved.</p>
         </div>
     </footer>
 
+    </footer>
+
+    <!-- Popup Form Container -->
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <button class="popup-close" aria-label="Close Popup">&times;</button>
+            <div class="popup-header">
+                <h2 class="form-title text-center" style="margin-bottom: 8px; color: #1e2d3d;">Claim Your Ramadan Offer
+                </h2>
+                <p class="form-subtitle text-center" style="margin-bottom: 24px; color: #4a5568;">
+                    Book now — <span style="color: #E39E3D; font-weight: 700;">Unlimited driving tests until you
+                        pass!</span>
+                </p>
+            </div>
+            <form class="booking-form-horizontal" id="popup-booking-form" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="full_name" class="form-input" placeholder="Full Name"
+                            autocomplete="name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Email" autocomplete="email"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="popup-field-phone" name="phone" class="form-input"
+                            placeholder="+971 50 000 0000" autocomplete="tel" required />
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="form-select-wrap">
+                            <select name="language" class="form-select" required>
+                                <option value="">Select Language</option>
+                                <option value="arabic" selected>Arabic</option>
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                                <option value="urdu">Urdu</option>
+                                <option value="tagalog">Tagalog</option>
+                            </select>
+                            <span class="select-arrow" aria-hidden="true">▼</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-select-wrap">
+                            <select name="interest" class="form-select" required>
+                                <option value="">Select Course</option>
+                                <option value="lmv" selected>Light Motor Vehicle (LMV)</option>
+                                <option value="mc">Motorcycle</option>
+                                <option value="hlb">Heavy & Light Bus</option>
+                                <option value="ht">Heavy Truck</option>
+                                <option value="hf">Heavy Forklift</option>
+                                <option value="lf">Light Forklift</option>
+                            </select>
+                            <span class="select-arrow" aria-hidden="true">▼</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-book-form" style="width: auto; padding: 0 32px;">
+                        <span>Book Now</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Intl Tel Input Script -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Main Form Init
+            const input = document.querySelector("#field-phone");
+            const itiConfig = {
+                initialCountry: "auto",
+                geoIpLookup: function (callback) {
+                    fetch("https://ipapi.co/json")
+                        .then(function (res) { return res.json(); })
+                        .then(function (data) { callback(data.country_code); })
+                        .catch(function () { callback("ae"); });
+                },
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"
+            };
+            window.intlTelInput(input, itiConfig);
+
+            // Popup Form Init
+            const popupInput = document.querySelector("#popup-field-phone");
+            window.intlTelInput(popupInput, itiConfig);
+
+            // Popup Logic
+            const popupOverlay = document.getElementById('popup-overlay');
+            const closeBtn = document.querySelector('.popup-close');
+            const ctaButtons = document.querySelectorAll('a[href="#booking-form"], button[onclick*="booking-form"], a[href="#ramadan-offer"]');
+
+            ctaButtons.forEach(btn => {
+                btn.removeAttribute('onclick'); // Remove existing inline handlers
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    popupOverlay.classList.add('active');
+                });
+            });
+
+            closeBtn.addEventListener('click', () => {
+                popupOverlay.classList.remove('active');
+            });
+
+            popupOverlay.addEventListener('click', (e) => {
+                if (e.target === popupOverlay) {
+                    popupOverlay.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

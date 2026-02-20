@@ -323,6 +323,7 @@ a {
 
 .hero-heading-gold {
     color: var(--color-gold);
+    font-size: 0.5em;
 }
 
 /* Description */
@@ -534,9 +535,9 @@ a {
     background: var(--color-gold);
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 15px 24px;
+    font-size: 1.15rem;
+    font-weight: 800;
+    padding: 18px 28px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -658,47 +659,22 @@ a {
 
 .trust-strip-inner {
     display: flex;
-    justify-content: flex-start;
-    /* Align start for scrolling */
-    overflow: hidden;
-    /* Hide overflow */
+    justify-content: center;
     width: 100%;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    /* Fade edges */
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .trust-list {
     display: flex;
-    flex-wrap: nowrap;
-    /* Prevent wrapping */
+    flex-wrap: wrap;
+    /* allow wrapping if screen is small */
+    justify-content: center;
     align-items: center;
-    gap: 48px;
-    /* Increased gap for better spacing */
+    gap: 32px;
+    /* Adjusted gap */
     list-style: none;
     padding: 0;
     margin: 0;
-    width: max-content;
-    /* Allow it to grow */
-    animation: marquee-scroll 25s linear infinite;
-    /* Smooth slow scroll */
-}
-
-/* Pause on hover for readability */
-.trust-list:hover {
-    animation-play-state: paused;
-}
-
-@keyframes marquee-scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-
-    /* Move half the width (the duplicate set) */
+    width: 100%;
 }
 
 .trust-item {
@@ -1171,7 +1147,7 @@ a {
 }
 
 .text-italic-dark {
-    
+
     color: var(--color-gold)
 }
 
@@ -1188,16 +1164,10 @@ a {
 .loc-btn {
     background: none;
     border: none;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    transition: transform 0.3s ease;
-}
-
-.loc-btn:hover {
-    transform: translateY(-5px);
 }
 
 .loc-img-wrap {
@@ -1224,26 +1194,15 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Active State (Gold) */
-.loc-btn.active .loc-img-wrap,
+/* Hover State (Gold) - purely visual, no active state */
 .loc-btn:hover .loc-img-wrap {
     border-color: var(--color-gold);
     box-shadow: 0 0 0 4px rgba(227, 158, 61, 0.15);
 }
 
-.loc-btn.active .loc-name,
 .loc-btn:hover .loc-name {
     color: var(--color-dark);
     font-weight: 700;
-}
-
-/* Map Container */
-.map-container {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    background: #eee;
-    height: 450px;
 }
 
 /* Responsive */
@@ -1259,10 +1218,6 @@ a {
 
     .loc-name {
         font-size: 0.9rem;
-    }
-
-    .map-container {
-        height: 350px;
     }
 }
 
