@@ -140,11 +140,28 @@
     }
 
     .popup-content {
-        padding: 32px 24px;
+        padding: 56px 20px 32px;
+        /* Increased top padding to accommodate close button */
         max-width: 500px;
         /* Stacked layout max width */
-        max-height: 90vh;
+        max-height: 95vh;
         overflow-y: auto;
+    }
+
+    .popup-close {
+        top: 12px;
+        right: 12px;
+        width: 36px;
+        height: 36px;
+        background: #000;
+        /* Matching the black style in user screenshot */
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .popup-header {
+        padding-inline: 10px;
+        margin-bottom: 24px;
     }
 
     .btn-book-form {
