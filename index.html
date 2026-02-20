@@ -28,10 +28,8 @@
 
             <!-- Logo -->
             <a href="#" class="header-logo" id="header-logo-link" aria-label="Belhasa Driving Center - Home">
-                <!-- Replace src with your actual logo file -->
                 <img src="assets/images/logo_bdc.png" alt="Belhasa Driving Center Logo" id="site-logo" class="logo-img"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-                <!-- Fallback placeholder shown if logo.png is missing -->
                 <div class="logo-placeholder" id="logo-placeholder">
                     <div class="logo-icon">SB</div>
                     <div class="logo-text">
@@ -40,17 +38,35 @@
                     </div>
                 </div>
             </a>
-
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="header-menu-toggle" id="header-menu-toggle" aria-label="Open navigation">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
             <!-- Navigation / CTA -->
             <nav class="header-nav" id="header-nav" aria-label="Primary navigation">
-                <a href="#ramadan-offer" class="btn-ramadan" id="btn-ramadan-offer">
-                    <span class="btn-icon" aria-hidden="true">🌙</span>
-                    <span>Ramadan Offer</span>
+                <a href="tel:8002354272" class="btn-ramadan btn-header-call">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+                <a href="https://wa.me/971500000000" class="btn-ramadan btn-header-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp Now</span>
                 </a>
             </nav>
 
         </div>
     </header>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('header-menu-toggle');
+        const headerNav = document.getElementById('header-nav');
+        menuToggle.addEventListener('click', function () {
+            headerNav.classList.toggle('nav-open');
+            menuToggle.classList.toggle('open');
+        });
+    </script>
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero-section" id="ramadan-offer" aria-label="Ramadan Offer Hero">
@@ -167,21 +183,7 @@
         </div>
     </section>
 
-    <!-- ===== TRUST STRIP ===== -->
-    <section class="trust-strip" aria-label="Trust Indicators">
-        <div class="container trust-strip-inner">
-            <ul class="trust-list">
-                <li class="trust-item"><span class="trust-dot">•</span> RTA Approved</li>
-                <li class="trust-item"><span class="trust-dot">•</span> Dubai's Most Trusted Driving School</li>
-                <li class="trust-item"><span class="trust-dot">•</span> Free Transportation</li>
-                <li class="trust-item"><span class="trust-dot">•</span> 0% Installments via Tabby</li>
-            </ul>
-        </div>
-    </section>
-
-
-
-
+  
     <!-- ===== COURSES SECTION ===== -->
     <section class="courses-section" aria-label="Our Driving Courses">
         <div class="container">
@@ -241,56 +243,6 @@
 
             </div>
 
-            <!-- Bottom CTA -->
-            <div class="courses-cta">
-                <button class="btn-cta-large"
-                    onclick="document.getElementById('booking-form').scrollIntoView({behavior: 'smooth'})">
-                    Start My Driving Journey
-                </button>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ===== WHY BELHASA SECTION ===== -->
-    <section class="why-us-section" aria-label="Why Choose Belhasa">
-        <div class="container">
-
-            <!-- Header -->
-            <div class="courses-header">
-                <div class="header-separator">
-                    <span class="sep-line"></span>
-                    <span class="sep-text">WHY BELHASA</span>
-                    <span class="sep-line"></span>
-                </div>
-                <h2 class="courses-title">
-                    <span class="title-dark">Everything Included,</span>
-                    <span class="title-gold">Nothing Extra</span>
-                </h2>
-            </div>
-
-            <!-- Features Grid -->
-            <div class="features-grid">
-
-                <!-- Card 1: Unlimited Tests -->
-                <div class="feature-card">
-                    <div class="feat-icon-box">
-                        <svg class="feat-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
-                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
-                            <path d="M4 22h16"></path>
-                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
-                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
-                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feat-title">Unlimited Tests</h3>
-                    <p class="feat-desc">Keep testing until you pass. Zero re-test fees, unlimited attempts.</p>
-                </div>
-
-                <!-- Card 2: 0% Tabby -->
                 <div class="feature-card">
                     <div class="feat-icon-box">
                         <img src="assets/images/tabby.svg" alt="Tabby Logo" style="height: 48px; width: auto;" />

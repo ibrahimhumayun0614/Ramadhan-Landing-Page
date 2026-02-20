@@ -163,6 +163,21 @@ a {
     gap: 16px;
 }
 
+.btn-header-call i,
+.btn-header-whatsapp i {
+    font-size: 1.1rem;
+    margin-right: 6px;
+}
+
+.btn-header-whatsapp {
+    background: #25d366 !important;
+}
+
+.btn-header-whatsapp:hover {
+    background: #25d366 !important;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45) !important;
+}
+
 .btn-ramadan {
     display: inline-flex;
     align-items: center;
@@ -216,6 +231,92 @@ a {
 
     50% {
         transform: rotate(10deg) scale(1.15);
+    }
+}
+
+/* ---------- Responsive Header Navigation ---------- */
+@media (max-width: 768px) {
+    .header-inner {
+        gap: 8px;
+        padding-inline: 12px;
+    }
+    .header-nav {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        background: #fff;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 220px;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+        z-index: 1001;
+        padding: 24px 16px;
+        border-radius: 0 0 0 16px;
+        display: block;
+    }
+    .header-nav.nav-open {
+        transform: translateX(0);
+    }
+    .header-nav a {
+        width: 100%;
+        margin-bottom: 18px;
+        font-size: 1rem;
+    }
+    .header-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        height: 38px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 8px;
+        z-index: 1002;
+    }
+    .menu-bar {
+        width: 26px;
+        height: 3px;
+        background: #333;
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+    .header-menu-toggle.open .menu-bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .header-menu-toggle.open .menu-bar:nth-child(2) {
+        opacity: 0;
+    }
+    .header-menu-toggle.open .menu-bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    .header-nav {
+        display: none;
+    }
+    .header-nav.nav-open {
+        display: block;
+    }
+}
+@media (min-width: 769px) {
+    .header-menu-toggle {
+        display: none;
+    }
+    .header-nav {
+        display: flex !important;
+        position: static;
+        background: none;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        padding: 0;
+        border-radius: 0;
+        transform: none;
     }
 }
 
