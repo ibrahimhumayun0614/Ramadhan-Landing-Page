@@ -97,13 +97,9 @@
             <div class="hero-form-wrap" id="hero-form-wrap">
                 <div class="hero-form-card" id="hero-form-card">
 
-                    <h2 class="form-title" id="form-title">Claim Your Ramadan Offer</h2>
-                    <p class="form-subtitle">
-                        Book now —
-                        <span class="form-subtitle-gold">Unlimited driving tests until you pass!</span>
-                    </p>
+                    <h2 class="form-title" id="form-title">Claim Your Ramadan Driving License Offer</h2>
 
-                    <form class="booking-form" id="booking-form" novalidate>
+                    <form class="booking-form" id="booking-form" action="send_email.php" method="POST" novalidate>
 
                         <div class="form-group">
                             <label for="field-name" class="form-label">FULL NAME</label>
@@ -130,8 +126,7 @@
                                     <option value="">Select Language</option>
                                     <option value="arabic" selected>Arabic</option>
                                     <option value="english">English</option>
-                                    <option value="hindi">Hindi</option>
-                                    <option value="urdu">Urdu</option>
+                                    <option value="hindi_urdu">Hindi/Urdu</option>
                                     <option value="tagalog">Tagalog</option>
                                 </select>
                                 <span class="select-arrow" aria-hidden="true">▼</span>
@@ -429,7 +424,8 @@
                         pass!</span>
                 </p>
             </div>
-            <form class="booking-form-horizontal" id="popup-booking-form" novalidate>
+            <form class="booking-form-horizontal" id="popup-booking-form" action="send_email.php" method="POST"
+                novalidate>
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" name="full_name" class="form-input" placeholder="Full Name"
@@ -451,8 +447,7 @@
                                 <option value="">Select Language</option>
                                 <option value="arabic" selected>Arabic</option>
                                 <option value="english">English</option>
-                                <option value="hindi">Hindi</option>
-                                <option value="urdu">Urdu</option>
+                                <option value="hindi_urdu">Hindi/Urdu</option>
                                 <option value="tagalog">Tagalog</option>
                             </select>
                             <span class="select-arrow" aria-hidden="true">▼</span>

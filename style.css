@@ -261,7 +261,8 @@ a {
    ===================================================== */
 
 .hero-section {
-    background: #f4f6f9;
+    background: url('assets/images/hero\ image.jpeg') no-repeat center center/cover;
+    position: relative;
     padding-block: clamp(24px, 4vw, 52px);
     min-height: calc(100vh - var(--header-height));
     display: flex;
@@ -318,7 +319,7 @@ a {
 }
 
 .hero-heading-dark {
-    color: #1e2d3d;
+    color: #ffffff;
 }
 
 .hero-heading-gold {
@@ -329,7 +330,7 @@ a {
 /* Description */
 .hero-desc {
     font-size: clamp(1rem, 1.5vw, 1.1rem);
-    color: #4a5568;
+    color: #ffffff;
     font-weight: 500;
     line-height: 1.75;
     max-width: 520px;
@@ -427,10 +428,9 @@ a {
 
 /* Form Title */
 .form-title {
-    font-size: clamp(1.5rem, 2.5vw, 5rem);
-    font-weight: 800;
-    color: var(--color-dark);
-    line-height: 1.2;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gold) !important;
     margin-bottom: 2px;
 }
 
