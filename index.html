@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="popup.css" />
     <link rel="stylesheet" href="whatsapp.css" />
     <link rel="stylesheet" href="faq.css" />
+    <link rel="icon" type="image/png" href="assets/images/sb_logo.png" />
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                     <i class="fa-solid fa-phone"></i>
                     <span>Call Now</span>
                 </a>
-                <a href="https://wa.me/971500000000" class="btn-ramadan btn-header-whatsapp" target="_blank">
+                <a href="https://wa.me/+971551030103" class="btn-ramadan btn-header-whatsapp" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                     <span>WhatsApp Now</span>
                 </a>
@@ -208,7 +209,6 @@
                 <!-- Card 1: LMV -->
                 <div class="course-card">
                     <div class="course-img-wrap">
-                        <span class="course-badge">MOST POPULAR</span>
                         <img src="assets/images/Light motor vechicle.webp" alt="Light Motor Vehicle" class="course-img"
                             loading="lazy">
                     </div>
@@ -218,7 +218,6 @@
                 <!-- Card 2: Motorcycle -->
                 <div class="course-card">
                     <div class="course-img-wrap">
-                        <span class="course-badge badge-deal">BEST DEAL</span>
                         <img src="assets/images/Motorcycle.jpg" alt="Motorcycle" class="course-img" loading="lazy">
                     </div>
                     <h3 class="course-name">Motorcycle</h3>
@@ -560,7 +559,7 @@
             // Popup Logic
             const popupOverlay = document.getElementById('popup-overlay');
             const closeBtn = document.querySelector('.popup-close');
-            const ctaButtons = document.querySelectorAll('a[href="#booking-form"], button[onclick*="booking-form"], a[href="#ramadan-offer"]');
+            const ctaButtons = document.querySelectorAll('a[href="#booking-form"], button[onclick*="booking-form"], a[href="#ramadan-offer"], .course-card');
 
             ctaButtons.forEach(btn => {
                 btn.removeAttribute('onclick'); // Remove existing inline handlers
