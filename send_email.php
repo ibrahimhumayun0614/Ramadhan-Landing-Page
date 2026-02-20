@@ -2,7 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php'; // Adjust path if not using Composer or include PHPMailer manually
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullName = strip_tags(trim($_POST["full_name"]));
@@ -22,12 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         //Server settings
         $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.example.com';                     // Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'your_email@example.com';               // SMTP username
-        $mail->Password   = 'your_password';                        // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-        $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+        $mail->Host       = 'localhost';                            // Set the SMTP server to send through
+        $mail->SMTPAuth   = false;                                  // Disable SMTP authentication
+        //$mail->Username   = 'your_email@example.com';             // SMTP username
+        //$mail->Password   = 'your_password';                      // SMTP password
+        //$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;       // Enable TLS encryption
+        $mail->Port       = 25;                                     // TCP port to connect to
 
         //Recipients
         $mail->setFrom('from@example.com', 'Belhasa Driving Center Landing Page');

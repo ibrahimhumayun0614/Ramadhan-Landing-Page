@@ -267,9 +267,24 @@ a {
     min-height: calc(100vh - var(--header-height));
     display: flex;
     align-items: center;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    /* Black overlay */
+    z-index: 1;
 }
 
 .hero-inner {
+    position: relative;
+    z-index: 2;
     max-width: var(--container-max);
     margin-inline: auto;
     padding-inline: var(--container-pad);
@@ -325,6 +340,12 @@ a {
 .hero-heading-gold {
     color: var(--color-gold);
     font-size: 0.5em;
+}
+
+.hero-highlight {
+    color: var(--color-gold);
+    font-size: 1.25em;
+    text-shadow: 0 4px 12px rgba(227, 158, 61, 0.4);
 }
 
 /* Description */
