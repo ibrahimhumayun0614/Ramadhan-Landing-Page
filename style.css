@@ -1190,7 +1190,7 @@ a {
 .video-heading {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 800;
-    font-size: clamp(2.5rem, 5vw, 3rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
     text-transform: capitalize;
     margin-bottom: 8px;
