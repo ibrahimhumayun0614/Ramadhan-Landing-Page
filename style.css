@@ -746,7 +746,10 @@ a {
     }
 
     .hero-heading-gold {
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     .hero-desc {
@@ -1368,7 +1371,7 @@ a {
     }
 
     .video-heading {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .btn-video-cta {
