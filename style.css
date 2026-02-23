@@ -452,7 +452,25 @@ a {
 
 .hero-heading-gold {
     color: var(--color-gold);
-    font-size: 0.5em;
+    font-size: 0.3em;
+    /* Reduced from 0.5em */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.hero-offer-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-heading-gold i {
+    font-size: 0.9em;
+    color: var(--color-gold);
 }
 
 .hero-highlight {
@@ -727,6 +745,10 @@ a {
         align-items: center;
     }
 
+    .hero-heading-gold {
+        align-items: center;
+    }
+
     .hero-desc {
         max-width: 600px;
     }
@@ -910,10 +932,29 @@ a {
 /* Grid */
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 columns on desktop */
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 columns on desktop */
     gap: 24px;
     margin-bottom: 40px;
+}
+
+/* Responsive adjustments for 5 columns */
+@media (max-width: 1200px) {
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Card */
