@@ -124,6 +124,9 @@
                     <h2 class="form-title" id="form-title">Claim Your Ramadan Driving License Offer</h2>
 
                     <form class="booking-form" id="booking-form" action="send_email.php" method="POST" novalidate>
+                        <div class="form-success-message" id="form-success-message"
+                            style="display:none;color:green;margin-bottom:10px;font-weight:500;text-align:center;">Thank
+                            you! Your details have been submitted successfully. Our team will contact you shortly.</div>
 
                         <div class="form-group">
                             <label for="field-name" class="form-label">FULL NAME</label>
@@ -407,19 +410,36 @@
 
 
     <!-- ===== FAQ SECTION ===== -->
-    <section class="faq-section" aria-label="Frequently Asked Questions">
+    <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
         <div class="container">
-            <h2 class="section-title-center">Frequently Asked <span class="text-italic-dark">Questions</span></h2>
+            <h2 class="faq-title">Frequently Asked <span>Questions</span></h2>
 
             <div class="faq-grid">
                 <!-- Column 1 -->
                 <div class="faq-col">
                     <details class="faq-item">
+                        <summary class="faq-question">Why Choose Belhasa Driving Center (BDC)?</summary>
+                        <div class="faq-answer">
+                            <p>Established in 2001, Belhasa Driving Center (BDC) has grown into one of Dubai’s leading
+                                driving institutes, operating 5 branches and 28 outlets with a fleet of over 800 modern
+                                vehicles.</p>
+                            <p>With over 20 years of expertise, our certified instructors and assessors are recognized
+                                among the best in Dubai, consistently achieving outstanding RTA awards. <strong>In 2025,
+                                    Belhasa Driving Center (BDC) secured 1st Place in the Theory Test and RTA Yard
+                                    Test</strong>, further reinforcing our
+                                commitment to excellence.</p>
+                            <p>The Licensing Agency of the Roads and Transport Authority (RTA) has officially recognized
+                                BDC for achieving exceptional Knowledge Test results (June 2023 – May 2024) and
+                                contributing to the lowest traffic accident rate among new drivers in 2023. Your journey
+                                to a safe and successful driving future starts with BDC.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
                         <summary class="faq-question">What does the 40% Ramadan discount include?</summary>
                         <div class="faq-answer">
                             <p>The Ramadan offer provides up to 40% off practical driving training packages. The package
                                 includes unlimited driving tests until you pass, free transportation, and RTA-approved
-                                training. The discount applies for a limited time during Ramadan.</p>
+                                training.</p>
                         </div>
                     </details>
                     <details class="faq-item">
@@ -430,19 +450,12 @@
                                 training.</p>
                         </div>
                     </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">Do you offer installment payment options?</summary>
-                        <div class="faq-answer">
-                            <p>Yes. You can split your course fee into 4 interest-free payments through Tabby (0%
-                                installment plan). No additional finance charges apply.</p>
-                        </div>
-                    </details>
                 </div>
 
                 <!-- Column 2 -->
                 <div class="faq-col">
                     <details class="faq-item">
-                        <summary class="faq-question">What does “Unlimited Tests Until You Pass” mean?</summary>
+                        <summary class="faq-question">What does "Unlimited Tests Until You Pass" mean?</summary>
                         <div class="faq-answer">
                             <p>You can retake your RTA driving test as many times as needed without paying additional
                                 retest fees, according to the promotional package terms. There are no capped attempts
@@ -459,15 +472,29 @@
                     <details class="faq-item">
                         <summary class="faq-question">Where are your branches located and how do I register?</summary>
                         <div class="faq-answer">
-                            <p>Branches are available across Dubai, including Al Wasl, Al Quoz, Nad Al Hamar, and Jebel
-                                Ali. To register, simply fill out the online form with your details and preferred
-                                course. A representative will contact you to confirm your enrollment and next steps.</p>
+                            <p>Our branches are conveniently located across Dubai, including Al Wasl, Al Quoz, Nad Al
+                                Hamar, Al Qusais, and Jebel Ali, along with 28 outlets and kiosks across the
+                                emirate—making your registration easy and accessible.</p>
+                            <p>Getting started is simple. Just complete the online registration form with your details
+                                and preferred course.</p>
                         </div>
                     </details>
                 </div>
             </div>
+
+            <!-- Centered Last FAQ -->
+            <div class="faq-footer">
+                <details class="faq-item">
+                    <summary class="faq-question">Do you offer Installment payment options?</summary>
+                    <div class="faq-answer">
+                        <p>Yes. You can split your course fee into 4 interest-free payments through Tabby (0%
+                            installment plan). No additional finance charges apply.</p>
+                    </div>
+                </details>
+            </div>
         </div>
     </section>
+
 
     <!-- ===== LOCATIONS SECTION ===== -->
     <section class="locations-section" aria-label="Our Branches">
@@ -574,6 +601,9 @@
             </div>
             <form class="booking-form-horizontal" id="popup-booking-form" action="send_email.php" method="POST"
                 novalidate>
+                <div class="form-success-message" id="popup-form-success-message"
+                    style="display:none;color:green;margin-bottom:10px;font-weight:500;text-align:center;">Thank you!
+                    Your details have been submitted successfully. Our team will contact you shortly.</div>
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" name="full_name" class="form-input" placeholder="Full Name"
@@ -628,6 +658,7 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+
     <!-- Intl Tel Input Script -->
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
     <script>
@@ -671,6 +702,57 @@
                 if (e.target === popupOverlay) {
                     popupOverlay.classList.remove('active');
                 }
+            });
+
+
+            // --- AJAX Form Submission ---
+            const forms = [document.getElementById('booking-form'), document.getElementById('popup-booking-form')];
+            forms.forEach(form => {
+                if (!form) return;
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalBtnContent = submitBtn.innerHTML;
+
+                    // Show Loading State
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<span><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>';
+
+                    const formData = new FormData(form);
+
+                    fetch('send_email.php', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-Requested-With': 'XMLHttpRequest'
+                        }
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.status === 'success') {
+                                form.reset();
+                                // Show success message
+                                const successMsg = form.id === 'booking-form' ? document.getElementById('form-success-message') : document.getElementById('popup-form-success-message');
+                                if (successMsg) {
+                                    successMsg.style.display = 'block';
+                                    setTimeout(() => { successMsg.style.display = 'none'; }, 4000);
+                                }
+                                // If it's a popup, close it
+                                const popupOverlay = document.getElementById('popup-overlay');
+                                if (popupOverlay.classList.contains('active')) {
+                                    setTimeout(() => popupOverlay.classList.remove('active'), 2000);
+                                }
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Submission error:', error);
+                        })
+                        .finally(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnContent;
+                        });
+                });
             });
         });
     </script>
